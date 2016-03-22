@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "Dog-Be-Gone",
+    "description": "For all your dog purging needs!",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "js/script.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
